@@ -1,0 +1,25 @@
+<div class="bg">  
+    <ng-container *ngFor = "let product of products">
+  
+    
+    <div class="course container col-sm-3"  > 
+        <div class="course container col-sm-3"  >
+         <div class="mob-card">
+        <div>
+           <img [src] = "product.image" style="width : 300px; height : 300px" >
+        </div>
+        <div class = "a"><h3>{{product.name}}</h3></div>
+     
+      
+      <br>
+        <div class="mob-button">
+            <button class=" btn btn-primary"  routerLink="/product" routerLinkActive="active" ariaCurrentWhenActive="page">Buy</button>
+          
+          <button class=" btn btn-primary" (click)="details()">Details</button>
+        </div>
+      </div>
+          </div>
+    </div>
+     </ng-container>
+</div>
+
